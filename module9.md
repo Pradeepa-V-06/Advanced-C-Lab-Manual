@@ -12,12 +12,20 @@ Algorithm:
 7.	Use the display function to visualize the stack's contents
  
 Program:
+```
+int stack[40],top,i; void display()
+{
+for(i=top;i>=0;i--)
+{
+printf("%d\n",stack[i]);
+}
+}
 
-//type your code here
+```
 
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/7b2127ef-a865-4f95-95d1-d290f06b8895)
 
 
 
@@ -36,14 +44,23 @@ Algorithm:
  
 Program:
 
-//type your code here
-
+```
+int size=3,top=1; float stack[40];
+void push (float data)
+{
+if (top==size-1 )
+{
+printf("stack is full\n");
+}
+else
+{
+top ++; stack[top] = data;
+}
+}
+```
 Output:
 
-//paste your output here
-
-
-
+![image](https://github.com/user-attachments/assets/c4a01d19-4748-43d3-8fff-766b76355d72)
 
 Result:
 Thus, the program to push the given element in to a stack using array is verified successfully
@@ -61,12 +78,26 @@ Algorithm:
 4.	Call the display function and perform other queue operations as needed.
  
 Program:
-
-//type your code here
-
+```
+int queue[50], rear, front,i; void display()
+{
+if(front==-1)
+{
+printf("No elements to display");
+}
+else
+{
+for(i=front;i<=rear;i++)
+{
+printf("%d ",queue[i]);
+}
+}
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/ef723f90-a25f-4210-9df9-c05d2550267b)
+
 
 
 Result:
@@ -86,11 +117,24 @@ Algorithm:
 
 Program:
 
-//type your code here
-
+```
+int size=4, rear=-1, front=-1; float queue[50];
+void enqueue(float data)
+{
+if(rear<size)
+{
+if(front==-1)
+{
+front=0;
+}
+rear=rear+1; queue[rear]=data;
+}
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/f5baa912-0967-4037-95e8-11d2457c77de)
+
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -121,12 +165,22 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 Program:
 
-//type your code here
-
+```
+int front, rear;
+void dequeue()
+{
+    if(front==-1&&rear==-1)
+    printf("Queue Underflow.");
+    else if(front==rear)
+    front=rear=-1;
+    else{
+        front=front+1;
+    }
+}
+```
 Output:
 
-//paste your output here
-
+![image](https://github.com/user-attachments/assets/a1ef78d1-6c8b-4086-932d-660b6ef38e82)
 
 Result:
 Thus, the function that deletes an element from a queue implemented using an array is verified successfully.
