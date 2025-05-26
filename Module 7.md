@@ -15,7 +15,7 @@ Else
 6.	Return 0
  
 Program:
-       #include<stdio.h> struct eligib
+      ``` #include<stdio.h> struct eligib
 {
 int age; char n[4];
 };
@@ -35,7 +35,7 @@ else
 printf("Age:%d\nName:%svaccine:%d\neligibility:yes",e.age,e.n,e.age);
  
 
-}
+}```
 
 
 Output:
