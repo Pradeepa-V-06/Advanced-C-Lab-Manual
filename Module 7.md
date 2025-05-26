@@ -64,6 +64,7 @@ Algorithm:
 7.	Return 0
  
 Program:
+```
 #include<stdio.h> struct numbers
 {
 int a; int b;
@@ -78,7 +79,7 @@ int add(struct numbers n)
 {
 return n.a+n.b;
 }
-
+```
 Output:
 
 ![image](https://github.com/user-attachments/assets/c553ff37-0a3a-4ba0-9eac-325e1c0a31a9)
@@ -111,7 +112,7 @@ Use scanf to input the file name into the name array.
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
+```
 #include <stdio.h> int main()
 {
 FILE *p;
@@ -120,7 +121,7 @@ printf("%s File Created Successfully",name); p=fopen("name","w");
 printf("\n%s File Opened",name); fclose(p);
 printf("\n%s File Closed",name);
 }
-
+```
 Output:
 
 ![image](https://github.com/user-attachments/assets/e16aba42-bf72-4c6f-a72c-62b3d9d6d383)
@@ -152,7 +153,7 @@ Use scanf to input the file name into the name array and the number of strings i
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
+```
 #include <stdio.h> int main()
 {
 FILE *p;
@@ -164,7 +165,7 @@ scanf("%s",text); fputs(text,p);
 printf("\nData added Successfully");
 
 }
-
+```
 Output:
 
 ![image](https://github.com/user-attachments/assets/b6af8630-02dd-4234-820a-3c1cf9b9caf9)
@@ -207,6 +208,7 @@ Algorithm:
 13.End the program by returning 0.
 
 Program:
+```
 #include <stdio.h>
 #include <stdlib.h>
 struct Subject
@@ -237,7 +239,7 @@ int main()
     
     return 0;
 }
-
+```
 
 
 Output:
